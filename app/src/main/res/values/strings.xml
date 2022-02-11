@@ -1,5 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab1</string>
-    <string name="hello_message">Hello World!</string>
-    <string name="ButtonText">I\’m a button</string>
+    <string name="app_name">Android Labs</string>
+    <string name="head">Look at my GUI</string>
+    <string name="button">CLICK HERE</string>
+    <string name="checkbox">Check this out!</string>
+    <string name="switch_on_off">Switch on/off!</string>
+    <string name="type_here">Type here</string>
+    <string name="TOAST_MESSAGE">Click here for more information</string>
+    <string name="switch2">Click here for more information</string>
+    <string name="undo">UNDO</string>
+    <string name="SWITCH_ON">The switch is now followed by On</string>
+    <string name="SWITCH_OFF">The switch is now followed by Off</string>
+    <string name="nation_flag">nation flag</string>
+    <drawable name="canada"> @drawable/flag</drawable>
 </resources>

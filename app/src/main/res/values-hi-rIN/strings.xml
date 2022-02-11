@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab1</string>
-    <string name="hello_message"> Namaste </string>
-    <string name="ButtonText">I\’m a button</string>
+    <string name="app_name">एंड्रॉइड लैब्स</string>
+    <string name="head">मेरे जीयूआई को देखो</string>
+    <string name="button">यहां क्लिक करें</string>
+    <string name="checkbox">इसकी जांच करें!</string>
+    <string name="switch_on_off">चालू करना / बंद करना!</string>
+    <string name="type_here">यहा लिखो</string>
+    <string name="TOAST_MESSAGE">अधिक जानकारी के लिए यहां दबाएं</string>
+    <string name="switch2">अधिक जानकारी के लिए यहां दबाएं</string>
+    <string name="SWITCH_ON">स्विच के बाद अब चालू है</string>
+    <string name="SWITCH_OFF">स्विच के बाद अब ऑफ है</string>
+    <string name="undo">पूर्ववत</string>
+    <string name="nation_flag">राष्ट्र ध्वज</string>
+    <drawable name="canada"> @drawable/flag </drawable>
 </resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/myCoordinatorLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/head"
+            android:textSize='30sp' />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="196dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/textView"
+            android:onClick="display_toast"
+            android:text="@string/button" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_toEndOf="@+id/button"
+            android:text="@string/checkbox" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="222dp"
+            android:layout_height="109dp"
+            android:layout_below="@+id/button"
+            android:background="@drawable/canada"
+            android:contentDescription="@string/nation_flag"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Switch
+            android:id="@+id/toggleButton"
+            android:layout_width="154dp"
+            android:layout_height="51dp"
+            android:layout_below="@+id/button"
+            android:layout_toEndOf="@+id/imageButton"
+            android:minHeight="48dp"
+            android:onClick="display_snack"
+            android:text="@string/switch_on_off"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton"
+            android:hint="@string/type_here"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:autofillHints="name"/>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
