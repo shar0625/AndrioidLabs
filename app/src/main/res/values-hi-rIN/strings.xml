@@ -1,14 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">एंड्रॉइड लैब्स</string>
-    <string name="head">मेरे जीयूआई को देखो</string>
-    <string name="button">मेरे जीयूआई को देखो</string>
-    <string name="checkbox">इसकी जांच करें!</string>
-    <string name="switch_on_off">चालू करना / बंद करना!</string>
-    <string name="type_here">यहा लिखो</string>
-    <string name="TOAST_MESSAGE">अधिक जानकारी के लिए यहां दबाएं</string>
-    <string name="SWITCH_ON">स्विच के बाद अब चालू है</string>
-    <string name="SWITCH_OFF">स्विच के बाद अब ऑफ है</string>
-    <string name="undo">पूर्ववत</string>
-    <string name="nation_flag">राष्ट्र ध्वज</string>
-    <drawable name="flag"> @drawable/flag</drawable>
+    <string name="app">एंड्रॉइड लैब्स</string>
+    <string name="textView">अपना ईमेल पता दर्ज करें</string>
+    <string name="edit1">अपना ईमेल पता दर्ज करें</string>
+    <string name="textView2">अपना पासवर्ड टाइप करें: </string>
+    <string name="textView3">आपकी रूपरेखा </string>
+    <string name="textView4">आपका नाम:</string>
+    <string name="button_login">लॉग इन करें</string>
+    <string name="editTextTextPersonName">अपना नाम दर्ज करें </string>
+    <string name="textView5">आपका ईमेल: </string>
+    <string name="editTextTextPersonName2">अपना ईमेल दर्ज करें </string>
+    <string name="textView6">आपकी तस्वीर: </string>
+    <string name="textView7">तस्वीर लेने के लिए ऊपर दिए गए बटन पर क्लिक करें</string>
 </resources>

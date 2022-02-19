@@ -1,54 +1,59 @@
 package com.cst2335.shar0625;
 
-import static com.cst2335.shar0625.R.id.togglebutton;
 
+import android.content.SharedPreferences;
+import android.widget.EditText;
+import android.util.Log;
+import android.content.Intent;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
-
-
-import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.CompoundButton;
-import android.widget.GridLayout;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.Switch;
-import android.widget.Toast;
-
-import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
-    //LinearLayout mainland;
+
+    private EditText email_address,password;
+    public static final String TAG = "PROFILE_ACTIVITY";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_linear);
+        setContentView(R.layout.activity_main);
+
+        // Getting email address and password from the user by its id.
+        email_address = findViewById(R.id.enter_email);
+        password = findViewById(R.id.password);
+
+        final Button loginButton = findViewById(R.id.button_login);
+        loginButton.setOnClickListener(view -> {
+            Intent goToProfile = new Intent(MainActivity.this, ProfileActivity.class);
+            goToProfile.putExtra("EMAIL", password.getText().toString());
+
+            Log.e(TAG, "email" + password.getText().toString());
+
+            startActivity(goToProfile);
+        });
     }
-    public void display_toast(View view){
+    @Override
+    protected void onResume() {
+        super.onResume();
 
-        Toast.makeText(MainActivity.this,getString(R.string.TOAST_MESSAGE)  , Toast.LENGTH_SHORT).show();
+        SharedPreferences sharedpref = getSharedPreferences("MySharedPref", MODE_PRIVATE);
+
+        String s1 = sharedpref.getString("name", "");
+        int a = sharedpref.getInt("email", 0);
+
+        email_address.setText(s1);
+        password.setText(String.valueOf(a));
     }
+    @Override
+    protected void onPause() {
+        super.onPause();
 
+        SharedPreferences sharedPreferences = getSharedPreferences("MySharedPref", MODE_PRIVATE);
+        SharedPreferences.Editor myEdit = sharedPreferences.edit();
 
-
-    public void display_snack (View view) {
-
-        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch toggle = (Switch) findViewById(togglebutton);
-
-        toggle.setOnCheckedChangeListener((compoundButton, isChecked) -> {
-            Snackbar snack;
-            if (isChecked) {
-                snack = Snackbar.make(toggle,getString(R.string.SWITCH_ON), Snackbar.LENGTH_LONG);
-
-            }
-            else {
-                snack = Snackbar.make(toggle, getString(R.string.SWITCH_ON), Snackbar.LENGTH_LONG);
-
-            }
-            snack.setAction("Undo", click -> compoundButton.setChecked(false));
-            snack.show();
-
-            }
-        );
+        myEdit.putString("name", email_address.getText().toString());
+        myEdit.putInt("email", Integer.parseInt(password.getText().toString()));
+        myEdit.apply();
     }
-}
+    ;}
