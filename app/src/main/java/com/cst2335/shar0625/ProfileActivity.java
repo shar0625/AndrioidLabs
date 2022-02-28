@@ -14,9 +14,13 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class ProfileActivity extends AppCompatActivity {
+    final Button chat_button = (Button) findViewById(R.id.chat_button);
+
     ImageButton button_image;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,10 @@ public class ProfileActivity extends AppCompatActivity {
 
         button_image= findViewById(R.id.image_button);
         button_image.setOnClickListener(view -> dispatchTakePictureIntent());
+        chat_button.setOnClickListener(view -> {
+            startActivity(new Intent(ProfileActivity.this, ChatRoomActivity.class));
+        });
+
     }
     @SuppressLint("QueryPermissionsNeeded")
     private void dispatchTakePictureIntent() {
@@ -45,8 +53,11 @@ public class ProfileActivity extends AppCompatActivity {
                         button_image.setImageBitmap(imgbitmap);
                     }
                     else if(result.getResultCode() == Activity.RESULT_CANCELED)
-                        Log.i(TAG, "User refused to capture a picture.");
+                        Log.e(TAG, "User refused to capture a picture.");
                 }
             } );
 
-}
+
+
+    }
+
