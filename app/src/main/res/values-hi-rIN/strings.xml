@@ -12,4 +12,8 @@
     <string name="editTextTextPersonName2">अपना ईमेल दर्ज करें </string>
     <string name="textView6">आपकी तस्वीर: </string>
     <string name="textView7">तस्वीर लेने के लिए ऊपर दिए गए बटन पर क्लिक करें</string>
+    <string name="send_button">भेजना</string>
+    <string name="receive_button">प्राप्त करना</string>
+    <string name="chat_type">यहाँ टाइप करें</string>
+    <string name="button_profile">चैट पर जाएं</string>
 </resources>

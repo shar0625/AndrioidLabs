@@ -19,14 +19,14 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class ProfileActivity extends AppCompatActivity {
-    final Button chat_button = (Button) findViewById(R.id.chat_button);
+    Button chat_button;
 
     ImageButton button_image;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
+        chat_button = (Button) findViewById(R.id.chat_button);
         button_image= findViewById(R.id.image_button);
         button_image.setOnClickListener(view -> dispatchTakePictureIntent());
         chat_button.setOnClickListener(view -> {
@@ -49,8 +49,8 @@ public class ProfileActivity extends AppCompatActivity {
                     if (result.getResultCode() == Activity.RESULT_OK) {
                         Intent data = result.getData();
                         assert data != null;
-                        Bitmap imgbitmap = (Bitmap) data.getExtras().get("data");
-                        button_image.setImageBitmap(imgbitmap);
+                        Bitmap img_bitmap = (Bitmap) data.getExtras().get("data");
+                        button_image.setImageBitmap(img_bitmap);
                     }
                     else if(result.getResultCode() == Activity.RESULT_CANCELED)
                         Log.e(TAG, "User refused to capture a picture.");

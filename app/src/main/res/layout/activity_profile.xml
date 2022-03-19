@@ -71,6 +71,6 @@
             android:id="@+id/chat_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Go to chat" />
+            android:text="@string/button_profile" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
