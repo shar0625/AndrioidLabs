@@ -22,12 +22,15 @@ public class TestToolbar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_toolbar);
         toolbar = (Toolbar)findViewById(R.id.toolbar);
-
+        setSupportActionBar( toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         if (getSupportActionBar() !=null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
+    }
+
+    private void setSupportActionBar(Toolbar toolbar) {
     }
 
     public void alertExample()
