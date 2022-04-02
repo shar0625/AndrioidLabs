@@ -32,6 +32,7 @@ public class TestToolbar extends AppCompatActivity {
 
     private void setSupportActionBar(Toolbar toolbar) {
 
+
     }
 
     public void alertExample()
