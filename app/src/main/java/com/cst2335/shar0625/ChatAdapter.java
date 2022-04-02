@@ -38,13 +38,13 @@ public class ChatAdapter extends ArrayAdapter<Message> {
 
         View view = null;
         Message message =ListMessage.get(position);
-        if(message.isSend==true){
+        if(message.isSent==true){
             view = inflater.inflate(R.layout.activity_main_send, parent, false);
             TextView send_messages = (TextView) view.findViewById(R.id.textViewMessage1);
             send_messages.setText(ListMessage.get(position).messages);
         }
 
-        if(message.isSend==false){
+        if(message.isSent==false){
             view = inflater.inflate(R.layout.activity_main_receive, parent, false);
             TextView receive_messages = (TextView) view.findViewById(R.id.textViewMessage);
             receive_messages.setText(ListMessage.get(position).messages);

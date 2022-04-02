@@ -16,4 +16,6 @@
     <string name="receive_button">Receive</string>
     <string name="chat_type">Type Here</string>
     <string name="button_profile">Go to chat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
