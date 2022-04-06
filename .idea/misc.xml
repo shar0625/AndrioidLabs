@@ -18,11 +18,13 @@
         <entry key="..\:/Users/rishi/AndroidStudioProjects/AndrioidLabs/app/src/main/res/layout/activity_main_relative.xml" value="0.4" />
         <entry key="..\:/Users/rishi/AndroidStudioProjects/AndrioidLabs/app/src/main/res/layout/activity_main_send.xml" value="0.39618138424821003" />
         <entry key="..\:/Users/rishi/AndroidStudioProjects/AndrioidLabs/app/src/main/res/layout/activity_profile.xml" value="0.1" />
-        <entry key="..\:/Users/rishi/AndroidStudioProjects/AndrioidLabs/app/src/main/res/layout/activity_test_toolbar.xml" value="0.1" />
+        <entry key="..\:/Users/rishi/AndroidStudioProjects/AndrioidLabs/app/src/main/res/layout/activity_test_toolbar.xml" value="0.2" />
+        <entry key="..\:/Users/rishi/AndroidStudioProjects/AndrioidLabs/app/src/main/res/layout/activity_weather_forecast.xml" value="0.4" />
         <entry key="..\:/Users/rishi/AndroidStudioProjects/AndrioidLabs/app/src/main/res/layout/adapter_view_layout.xml" value="0.2" />
-        <entry key="..\:/Users/rishi/AndroidStudioProjects/AndrioidLabs/app/src/main/res/layout/dialog.xml" value="0.1" />
+        <entry key="..\:/Users/rishi/AndroidStudioProjects/AndrioidLabs/app/src/main/res/layout/dialog.xml" value="0.4" />
         <entry key="..\:/Users/rishi/AndroidStudioProjects/AndrioidLabs/app/src/main/res/layout/fragment_blank.xml" value="0.1" />
         <entry key="..\:/Users/rishi/AndroidStudioProjects/AndrioidLabs/app/src/main/res/layout/fragment_details.xml" value="0.4" />
+        <entry key="..\:/Users/rishi/AndroidStudioProjects/AndrioidLabs/app/src/main/res/menu/menu.xml" value="0.20155038759689922" />
       </map>
     </option>
   </component>

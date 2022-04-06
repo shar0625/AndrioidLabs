@@ -14,12 +14,11 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
 public class ProfileActivity extends AppCompatActivity {
-    Button chat_button;
+    Button chat_button, goToToolbarBtn,goToWeatherBtn;
 
     ImageButton button_image;
     @Override
@@ -28,11 +27,22 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         chat_button = (Button) findViewById(R.id.chat_button);
         button_image= findViewById(R.id.image_button);
+        goToToolbarBtn=findViewById(R.id.GoToToolbarPage);
+        goToWeatherBtn=findViewById(R.id.GoToWeatherPage);
         button_image.setOnClickListener(view -> dispatchTakePictureIntent());
         chat_button.setOnClickListener(view -> {
             startActivity(new Intent(ProfileActivity.this, ChatRoomActivity.class));
         });
+        goToToolbarBtn.setOnClickListener(c -> {
+            Intent goToMenuPage = new Intent(ProfileActivity.this, TestToolbar.class);
 
+            startActivity(goToMenuPage);
+
+        });
+      goToWeatherBtn.setOnClickListener(c ->{
+          Intent weather = new Intent(ProfileActivity.this, WeatherForecast.class);
+          startActivity(weather);
+      });
     }
     @SuppressLint("QueryPermissionsNeeded")
     private void dispatchTakePictureIntent() {
@@ -56,8 +66,6 @@ public class ProfileActivity extends AppCompatActivity {
                         Log.e(TAG, "User refused to capture a picture.");
                 }
             } );
-
-
 
     }
 

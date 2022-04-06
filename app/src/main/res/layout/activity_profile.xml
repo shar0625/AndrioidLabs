@@ -72,5 +72,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button_profile" />
+
+        <Button
+            android:id="@+id/GoToToolbarPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/GoToToolbar"
+            android:layout_below="@id/chat_button"/>
+        <Button
+            android:id="@+id/GoToWeatherPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/GoToWeather"
+            android:layout_below="@id/GoToToolbarPage"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
